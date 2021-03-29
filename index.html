@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <!--head-->
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Adam Kelley</title>
+        <link rel="stylesheet" type="text/css" href="./css/portfolio.css">
+    </head>
+    
+    <!--BODY-->
+    <body>
+
+        <!--navbar-->
+        <div class="navbar">
+            <a class="active" href="#home">HOME</a>
+            <a href="#about">ABOUT</a>
+            <a href="#github">GITHUB</a>
+            <a href="#contact">CONTACT</a>
+        </div>
+
+        <!--video background-->
+        <div id="home">
+            <video autoplay muted loop id="video-loop">
+                <source src="./images/typing.mp4" type="video/mp4">
+                <!--if unable to play display:-->
+                Your browser does not support HTML5 video.
+            </video>
+        </div>
+
+        <!--video text-->
+        <div class="video-text">
+            <h1 class="white">Adam Kelley's Portfolio</h1>
+            <strong>
+                <p class="center">
+                    Hello!
+                    <br> My name is Adam Kelley. Welcome to my portfolio website.
+                    <br>Here, you will find info about my background, experience, and past/current projects.
+                    <br>
+                    <br>Thanks for stopping by, and please enjoy!
+                </p>
+            </strong>
+        </div>
+
+        <!--about-->
+        <div id="about" class="row">
+
+            <!--left column-->
+            <div class="column1">
+                <img src="./images/desk.png" alt="Desk with a monitor, keyboard, tablet, and Nintendo Switch">
+            </div>
+
+            <!--right column-->
+            <div class="column2">
+                <h1>About</h1>
+                <p>
+                    I am a software developer who is passionate coding, creating, and learning. When I'm not coding, I enjoy spending my time hiking, reading, and writing. Feel free to ask me about my cat, Yoko!
+                    <br>
+                    <br>I am a graduate of <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>’s C# and .NET Framework Boot Camp, and trained and experienced in the following web and programming languages: HTML, CSS, JavaScript, SQL, C# and more. 
+                    <br>
+                    <br>I am a full-stack developer who would love to work with you on your project! <a href="#contact">Contact</a> me below!
+                </p>
+            </div>
+        </div>
+
+        <!--github section-->
+        <div class="row" id="github">
+
+            <!--left column-->
+            <div class="column2">
+                <h1>GitHub</h1>
+                <p>
+                    You can view my coding projects on my GitHub here:
+                    <br>
+                    <p class="center"><a href="https://github.com/meteornium"" target="_blank">Adam Kelley Github</a></p>
+                </p>
+            </div>
+            
+            <!--right column-->
+            <div class="column1">
+                <a href="https://github.com/meteornium" target="_blank"><img src="./images/github.png" alt="GitHub logo"></a>
+            </div>
+        </div>
+
+        <!--contact section-->
+        <div id="contact" class="row">
+
+            <!--left column-->
+            <div class="column1 columntall">
+                <img src="./images/contact.png" alt="Contact Picture">
+            </div>
+
+            <!--right column-->
+            <div class="column2 columntall">
+                <h1>Contact</h1>
+                <!--form-->
+                <form action="" method="POST">
+                    <label>Name:</label>
+                        <input type="text" placeholder="Please enter your name here">
+                    <label>Email:</label>
+                        <input type="text" id="email" name="email" placeholder="Please enter your email here">
+                    <label>Message:</label>
+                        <input type="text" id="message" name="message" placeholder="Please write your message here">
+                        <input type="submit" value="SUBMIT">
+                </form>
+            </div>
+        </div>
+
+        <!--footer-->
+        <footer>
+            <p class="footer-text">
+                <br> 
+                <p class="footer-text">Made by: Adam Kelley, <a href="https://github.com/meteornium" target="_blank">GitHub</a></p>
+            </p>
+        </footer>
+    </body>
+</html>
