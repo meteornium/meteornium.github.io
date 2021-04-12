@@ -4,19 +4,23 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width">
-        <title>Portfolio</title>
+        <title>Adam Kelley Portfolio</title>
         <link rel="stylesheet" type="text/css" href="./css/portfolio.css">
+        <script src="js/script.js"></script>
     </head>
     
     <!--BODY-->
-    <body>
+    <body onload="showSlides()"> <!-- onload showSlides() to have slideshow begin -->
 
         <!--navbar-->
         <div class="navbar">
             <a class="active" href="#home">HOME</a>
+            <!-- new section -->
+            <a href="#slideshow">SLIDESHOW</a>
             <a href="#about">ABOUT</a>
             <a href="#github">GITHUB</a>
-            <a href="#contact">CONTACT</a>
+            <!-- new contact form button using js. open and closes form respectively -->
+            <a onclick="openForm()" ondblclick="closeForm()">CONTACT</a>
         </div>
 
         <!--video background-->
@@ -30,10 +34,19 @@
 
         <!--video text-->
         <div class="video-text">
-            <h1 class="white">My Portfolio</h1>
+            <h1 class="white">Adam Kelley Portfolio</h1>
             <strong>
                 <p class="center">
-                    Hello!
+                    <q>
+                        In some ways, programming is like painting. 
+                        <br>You start with a blank canvas and certain basic raw materials. 
+                        <br>You use a combination of science, art, and craft to determine what to do with them.
+                    </q>
+                    <br>
+                    <br>- Andrew Hunt
+                    <br>
+                    <br>
+                    Hello! My name is Adam Kelley.
                     <br>Welcome to my portfolio website.
                     <br>Here, you will find info about my background, experience, and past/current projects.
                     <br>
@@ -41,6 +54,67 @@
                 </p>
             </strong>
         </div>
+
+
+        <!-- slideshow -->
+        <div id="slideshow">
+            <div id="Slideshow_Background"> 
+                <div id="Slideshow_Container">
+
+                    <!-- Slide 1 of 5 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="./images/Snapchat-17262668972.jpg" alt="Picture of Adam Kelley">
+                        <div class="text">I am available to assist you on your project!</div>
+                    </div>
+
+                    <!-- Slide 2 of 6 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="./images/codes.png" alt="One-Page Website"> 
+                        <div class="text">I am a full-stack software developer,<br> trained in:<br>HTML, CSS, JavaScript, C#, .NET, ASP.NET, MVC, databases, and SQL.</div>
+                    </div>
+
+                    <!-- Slide 3 of 6 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="./images/unova.png" alt="One-Page Website"> 
+                        <div class="text">Here is a one-page website I created using HTML, CSS, and JavaScript.</div>
+                    </div>
+
+                    <!-- Slide 4 of 6 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="./images/tictactoe.png" alt="TicTaceToe site">
+                        <div class="text">A site I created where you can play TicTacToe against your computer. It utilizes HTML, CSS, and JavaScript.</div>
+                    </div>
+
+                    <!-- Slide 5 of 6 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="./images/bookshop.png" alt="Bootstrap Project">
+                        <div class="text">A site created with HTML, CSS, and JavaScript utilizing Bootstrap.</div>
+                    </div>
+
+                    <!-- Slide 6 of 6 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="./images/calculator.png" alt="Calculator site"> 
+                        <div class="text">A fully-functional calculator site using HTML, CSS, and JavaScript.</div>
+                    </div>
+
+                    <!-- Previous and next buttons -->
+                    <a class="Previous" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="Next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <br>
+
+                <!-- Slideshow dots (these are another way for users to navigate through the slideshow) -->
+                <div style="text-align: center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span> 
+                    <span class="dot" onclick="currentSlide(4)"></span> 
+                    <span class="dot" onclick="currentSlide(5)"></span> 
+                    <span class="dot" onclick="currentSlide(6)"></span> 
+                </div>
+            </div>
+        </div>
+        <!-- end slideshow -->
 
         <!--about-->
         <div id="about" class="row">
@@ -54,7 +128,7 @@
             <div class="column2">
                 <h1>About</h1>
                 <p>
-                    I am a software developer who is passionate coding, creating, and learning. When I'm not coding, I enjoy spending my time hiking, reading, and writing. Feel free to ask me about my cat, Yoko!
+                    Hello, I am Adam Kelley. I am a software developer who is passionate coding, creating, and learning. When I'm not coding, I enjoy spending my time hiking, reading, and writing. Feel free to ask me about my cat, Yoko!
                     <br>
                     <br>I am a graduate of <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>’s C# and .NET Framework Boot Camp, and trained and experienced in the following web and programming languages: HTML, CSS, JavaScript, SQL, C# and more. 
                     <br>
@@ -72,7 +146,7 @@
                 <p>
                     You can view my coding projects on my GitHub here:
                     <br>
-                    <p class="center"><a href="https://github.com/meteornium"" target="_blank">My Github</a></p>
+                    <p style="text-align:center"><a href="https://github.com/meteornium"" target="_blank">My Github</a></p>
                 </p>
             </div>
             
@@ -82,29 +156,26 @@
             </div>
         </div>
 
-        <!--contact section-->
-        <div id="contact" class="row">
-
-            <!--left column-->
-            <div class="column1 columntall">
-                <img src="./images/contact.png" alt="Contact Picture">
+        <!-- Contact form -->
+        <div id="Contact">
+            <button onclick="openForm()" class="Pop_Up_Button">CONTACT</button>
+            <div class="form-popup" id="myForm">
+                 <form action="https://formspree.io/info@learncodinganywhere.com" method="POST" class="form-container"> <!-- Here we are using a free online service from https://formspree.io/ to send our contact form to an email address of our choosing - note: it will not run unless live on the internet, you have to push it to your online website first -->
+                     <h1 style="color:black">Contact</h1>
+                     <label for="name"><b>Name</b></label>
+                       <input type="text" placeholder="Type your name here" name="name" required>
+                     <label for="phone"><b>Phone</b></label>
+                       <input type="text" placeholder="Type your phone number here" name="phone">
+                     <label for="email"><b>Email</b></label>		
+                       <input type="text" placeholder="Type your email address here" name="email" required>
+                     <label for="message"><b>Message</b></label>
+                       <input type="text" placeholder="Type your message here" name="message">
+          
+                     <button type="submit" class="btn">SUBMIT</button>
+                     <button type="button" class="btn cancel" onclick="closeForm()">CLOSE</button>
+                 </form>
             </div>
-
-            <!--right column-->
-            <div class="column2 columntall">
-                <h1>Contact</h1>
-                <!--form-->
-                <form action="" method="POST">
-                    <label>Name:</label>
-                        <input type="text" placeholder="Please enter your name here">
-                    <label>Email:</label>
-                        <input type="text" id="email" name="email" placeholder="Please enter your email here">
-                    <label>Message:</label>
-                        <input type="text" id="message" name="message" placeholder="Please write your message here">
-                        <input type="submit" value="SUBMIT">
-                </form>
-            </div>
-        </div>
+         </div>
 
         <!--footer-->
         <footer>
