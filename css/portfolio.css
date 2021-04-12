@@ -377,7 +377,7 @@ footer {
 
 /* Form styling */
 .form-container {
-    max-width: 30vw;
+    max-width: 20vw;
     padding: 1vw; 
     background-color: white; 
 }
@@ -396,7 +396,7 @@ footer {
 button {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     letter-spacing: .3vw;
-    font-size: 1.5vw; 
+    font-size: 1vw; 
     font-weight: bold; 
     padding: 1.5vw; 
     cursor: pointer; 
