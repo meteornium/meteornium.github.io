@@ -59,7 +59,7 @@ q {
 
 .center:hover {
     transition: transform 2s; 
-    transform: scale(1.1); 
+    transform: scale(1.05); 
 }
 
 a {
@@ -88,6 +88,13 @@ img {
     }
 }
 
+.artist {
+    height: 600px;
+    width: 1000px;
+    left: 50%;
+    margin-bottom: 1em;
+}
+
 footer {
     background-color: rgb(24, 24, 24);
     padding-bottom: 10px;
@@ -96,8 +103,12 @@ footer {
 .footer-text {
     height:50px;
     width:100px;
-    left:50%;
+    text-align: center;
     display:inline;
+}
+
+.footer-text-text{
+    text-align: center;
 }
  /* end of general styling */
 
@@ -290,6 +301,7 @@ footer {
     position: relative;
     -webkit-animation: moveVideoText 5.75s;
     animation: moveVideoText 5.75s;
+    height: 100%;
 }
 
 @keyframes moveVideoText {
@@ -309,7 +321,7 @@ footer {
     padding-top: 1.5%;
     padding-bottom: 3%;
     height: 400px;
-    background-color: rgb(204, 204, 204);
+    background-color: rgba(204, 204, 204, 0.685);
 }
 
 @media screen and (max-width: 576px) {
@@ -325,7 +337,7 @@ footer {
     padding-top: 1.5%;
     padding-bottom: 3%;
     height: 400px;
-    background-color: #333333;
+    background-color: #333333c5;
 }
 
 .columntall {
