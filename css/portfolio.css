@@ -23,11 +23,13 @@ h1 {
     color: rgb(255, 255, 255);
 }
 
-/* h1 hovers */
-h1:hover {
-    filter: grayscale(5%);
-    transform: scale(1.1);
-    transition: transform 1s;
+/* HEADING 2 */
+h2 {
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 1vw;
+    color: rgb(255, 255, 255);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 /* styling title text */
@@ -45,6 +47,7 @@ p {
     padding-left: 1vw; /* Relative padding equal to 1% of the viewport width */
     padding-right: 1vw; /* Relative padding equal to 1% of the viewport width */
     color: white;
+    padding-bottom: 1vw;
 }
 
 /* quote */
@@ -172,7 +175,8 @@ footer {
 
 /* Slideshow  */
 #Slideshow_Background {
-    background: rgba(255, 255, 255, 0.35); /* This creates a slightly transparent white background that's palced over the video in the background */    
+    background: rgba(255, 255, 255, 0.35);
+    padding-top: 1vw; /* This creates a slightly transparent white background that's palced over the video in the background */    
 }
 
 .mySlides{
@@ -183,7 +187,6 @@ footer {
 #Slideshow_Container {
     width: 39.5vw; 
     height: auto;
-    padding-top: 4%;
     position: relative;
     margin:auto;
 }
@@ -234,7 +237,7 @@ footer {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     letter-spacing: .1vw; 
     font-size: 1vw; 
-    background-color: rgba(0, 0, 0, 0.75);
+    background-color: rgba(0, 0, 0, 0.897);
     border-radius: 0px 0px 7px 7px; 
 }
 
@@ -320,7 +323,7 @@ footer {
     padding: 10px;
     padding-top: 1.5%;
     padding-bottom: 3%;
-    height: 400px;
+    height: 550px;
     background-color: rgba(204, 204, 204, 0.685);
 }
 
@@ -336,7 +339,7 @@ footer {
     padding: 10px;
     padding-top: 1.5%;
     padding-bottom: 3%;
-    height: 400px;
+    height: 550px;
     background-color: #333333c5;
 }
 
