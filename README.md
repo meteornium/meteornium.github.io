@@ -1,6 +1,6 @@
 # Portfolio Site
 
-Personal portfolio site created using HTML, CSS, and JavaScript
+Personal portfolio site created using HTML, CSS, and JavaScript.
 
 ![image](https://user-images.githubusercontent.com/79771326/123156994-d86c0f80-d41e-11eb-9287-60e8a9893150.png)
 
